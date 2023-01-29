@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pr7</title>
+</head>
+<body>
+    <p>Нажмите кнопку для объявления переенной и вывода результата.</p>
+    <button onclick="myFanction()">Нажми на меня,please!</button>
+    <p id="demo">Текст, помеченный меткой demo</p>
+    <script>
+        //объявляем функцию, которую будет вызывать кнопка по методу onclick
+        function myFanction {
+            //объявляем переменную строковую 
+            let carname = "Volvo";
+            /*
+            document.getElementByld - метод объекта  document. Он возврщает ссылку на узел документа,
+            которую можно исползовать для изменения свойств и обращения к методам узла.
+            */
+           //метод getElementByld, получающий данные из тега по метке demo
+           // Свойство innerHTML устанавливает или полчает всю разметку 
+           // и содержит внутри данного элемента.
+           document.getElementByld("demo").innerHTML=carname;
+        }
+    </script>
+
+
+
+</body>
+</html>
